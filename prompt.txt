@@ -1,0 +1,158 @@
+Objetivo:
+Crear un programa de estacionamiento para autos en Windows Forms. El estacionamiento tiene una estructura de cola circular doblemente ligada, donde cada auto se considera un nodo. Se debe gestionar la entrada y salida de los autos, calcular el costo del estacionamiento y mostrar la información relevante en la interfaz gráfica.
+
+Requisitos:
+
+Clase de Cola Circular Doblemente Ligada (CircularDoublyLinkedList)
+
+Debe implementar una cola que utiliza una estructura circular doblemente ligada.
+
+Cada auto será un nodo con los siguientes datos:
+
+Placas del auto (cadena).
+
+Propietario (cadena).
+
+Hora de entrada (DateTime).
+
+Esta cola debe permitir la inserción de autos y la eliminación cuando salgan del estacionamiento.
+
+Implementar los métodos de la cola:
+
+Enqueue(): Para insertar un auto en la cola.
+
+Dequeue(): Para eliminar un auto de la cola.
+
+Peek(): Para ver el primer auto en la cola sin eliminarlo.
+
+Count(): Para obtener el número de autos en la cola.
+
+Entrada de Autos
+
+El sistema debe permitir la entrada de autos al estacionamiento.
+
+Se debe capturar la placa y nombre del propietario.
+
+Registrar la hora de entrada usando DateTime.Now.
+
+Insertar el auto en la cola circular.
+
+Confirmar la entrada con un mensaje en la interfaz gráfica.
+
+Salida de Autos
+
+Cuando un auto salga, el sistema debe:
+
+Verificar que la cola no esté vacía.
+
+Presentar la información del vehículo: placas, nombre del propietario, hora de entrada y hora de salida.
+
+Calcular el costo de estacionamiento, que se cobra a $2.00 por segundo.
+
+El costo debe calcularse tomando la diferencia entre la hora de entrada y la hora de salida.
+
+Interfaz de Usuario (UI) en Windows Forms
+
+Crear una interfaz gráfica usando Windows Forms.
+
+La interfaz debe incluir las siguientes funcionalidades:
+
+Botones para:
+
+Registrar entrada de autos.
+
+Registrar salida de autos.
+
+Etiquetas o cuadros de texto para mostrar la información del vehículo (placas, propietario, hora de entrada y hora de salida).
+
+Paneles o áreas visuales para mostrar los autos que están actualmente en el estacionamiento (en la cola).
+
+Mostrar el costo del estacionamiento después de la salida de un vehículo.
+
+Mensaje de confirmación después de que un vehículo haya sido registrado en el sistema o haya salido del estacionamiento.
+
+Reglas del Estacionamiento
+
+Los autos no tienen un límite de cupo en el estacionamiento (el callejón es ilimitado).
+
+El costo de estacionamiento es $2.00 por segundo.
+
+La salida de un vehículo debe mostrar el tiempo transcurrido desde la hora de entrada hasta la hora de salida.
+
+Estructura del Proyecto:
+
+Clase Car:
+
+Esta clase debe almacenar los datos de cada vehículo: placas, propietario, hora de entrada y hora de salida.
+
+La clase debe incluir un constructor para inicializar estos valores.
+
+Clase CircularDoublyLinkedList:
+
+Esta clase implementará la cola circular doblemente ligada.
+
+Cada nodo de la lista representará un coche y contendrá:
+
+Placas (cadena).
+
+Propietario (cadena).
+
+Hora de entrada (DateTime).
+
+Referencia a los nodos anterior y siguiente (para permitir la estructura doblemente ligada).
+
+Los métodos principales serán:
+
+Enqueue(Car car): Insertar un coche en la cola.
+
+Dequeue(): Eliminar un coche de la cola.
+
+Peek(): Ver el primer coche de la cola sin eliminarlo.
+
+Count(): Contar la cantidad de coches en la cola.
+
+Formulario Principal (ParkingForm):
+
+Crear un formulario de Windows Forms con:
+
+Botones para gestionar la entrada y salida de los autos.
+
+Etiquetas para mostrar los detalles de los autos y el costo de estacionamiento.
+
+Un panel de información donde se muestre el vehículo que acaba de ingresar o salir.
+
+Funcionalidades de la Interfaz:
+
+Entrada de Autos:
+
+El formulario debe permitir ingresar las placas y el nombre del propietario del auto.
+
+Al presionar el botón de Entrada de Auto, el auto debe registrarse en la cola y aparecer en la interfaz con su información.
+
+Salida de Autos:
+
+El botón de Salida de Auto debe eliminar un auto de la cola, mostrar su información (placas, propietario, hora de entrada y salida), y calcular el costo según el tiempo transcurrido.
+
+Mostrar el mensaje de confirmación y el costo total en la interfaz.
+
+Siguientes Pasos:
+
+Desarrollar las Clases:
+
+Crear las clases Car y CircularDoublyLinkedList con sus métodos.
+
+Crear el servicio de entrada (ParkingEntryService) y salida (ParkingExitService).
+
+Desarrollar la Interfaz Gráfica:
+
+Diseñar la UI con Windows Forms.
+
+Crear los botones y etiquetas para registrar y mostrar la información del estacionamiento.
+
+Integrar Lógica y UI:
+
+Conectar la lógica de la cola con la interfaz de usuario para que las entradas y salidas de los autos se reflejen correctamente.
+
+Pruebas:
+
+Probar el sistema con varios autos y validar que el cálculo del costo y la actualización de la cola funcionen correctamente.

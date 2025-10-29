@@ -1,0 +1,14 @@
+D:\project\carros-lista\EstacionamientoAutos\bin\Debug\net8.0-windows\EstacionamientoAutos.exe
+D:\project\carros-lista\EstacionamientoAutos\bin\Debug\net8.0-windows\EstacionamientoAutos.deps.json
+D:\project\carros-lista\EstacionamientoAutos\bin\Debug\net8.0-windows\EstacionamientoAutos.runtimeconfig.json
+D:\project\carros-lista\EstacionamientoAutos\bin\Debug\net8.0-windows\EstacionamientoAutos.dll
+D:\project\carros-lista\EstacionamientoAutos\bin\Debug\net8.0-windows\EstacionamientoAutos.pdb
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.AssemblyInfoInputs.cache
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.AssemblyInfo.cs
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.csproj.CoreCompileInputs.cache
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.dll
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\refint\EstacionamientoAutos.dll
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.pdb
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.genruntimeconfig.cache
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\ref\EstacionamientoAutos.dll
