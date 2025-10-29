@@ -12,3 +12,4 @@ D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\refint\Est
 D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.pdb
 D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.genruntimeconfig.cache
 D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\ref\EstacionamientoAutos.dll
+D:\project\carros-lista\EstacionamientoAutos\obj\Debug\net8.0-windows\EstacionamientoAutos.sourcelink.json

@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace EstacionamientoAutos;
 
 public partial class Form1 : Form
@@ -18,7 +20,25 @@ public partial class Form1 : Form
             return;
         }
 
-        Car newCar = new Car(txtPlate.Text, txtOwner.Text);
+        string plate = txtPlate.Text.ToUpper();
+        Regex plateRegex = new Regex("^[A-Z]{3}[0-9]{3}$");
+
+        if (!plateRegex.IsMatch(plate))
+        {
+            MessageBox.Show("Formato de placa inválido. Debe ser 3 letras seguidas de 3 números (ej. ABC123).");
+            return;
+        }
+
+        string owner = txtOwner.Text;
+        Regex ownerRegex = new Regex("^[a-zA-Z ]+$");
+
+        if (!ownerRegex.IsMatch(owner))
+        {
+            MessageBox.Show("El nombre del propietario solo puede contener letras y espacios.");
+            return;
+        }
+
+        Car newCar = new Car(plate, owner);
         parkingLot.Enqueue(newCar);
 
         txtPlate.Clear();
