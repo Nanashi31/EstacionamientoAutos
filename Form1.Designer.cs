@@ -35,7 +35,6 @@ partial class Form1
             this.btnRegisterEntry = new System.Windows.Forms.Button();
             this.btnRegisterExit = new System.Windows.Forms.Button();
             this.lstCars = new System.Windows.Forms.ListBox();
-            this.lblCarInfo = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -100,31 +99,43 @@ partial class Form1
             this.lstCars.Size = new System.Drawing.Size(574, 184);
             this.lstCars.TabIndex = 6;
             // 
-            // lblCarInfo
-            // 
-            this.lblCarInfo.AutoSize = true;
-            this.lblCarInfo.Location = new System.Drawing.Point(12, 140);
-            this.lblCarInfo.Name = "lblCarInfo";
-            this.lblCarInfo.Size = new System.Drawing.Size(133, 15);
-            this.lblCarInfo.TabIndex = 7;
-            this.lblCarInfo.Text = "Información del Vehículo:";
-            // 
             // lblCost
             // 
             this.lblCost.AutoSize = true;
-            this.lblCost.Location = new System.Drawing.Point(12, 168);
+            this.lblCost.Location = new System.Drawing.Point(12, 140);
             this.lblCost.Name = "lblCost";
             this.lblCost.Size = new System.Drawing.Size(40, 15);
             this.lblCost.TabIndex = 8;
             this.lblCost.Text = "Costo:";
             // 
+            // lstDepartedCars
+            // 
+            this.lstDepartedCars = new System.Windows.Forms.ListBox();
+            this.lstDepartedCars.FormattingEnabled = true;
+            this.lstDepartedCars.ItemHeight = 15;
+            this.lstDepartedCars.Location = new System.Drawing.Point(214, 230);
+            this.lstDepartedCars.Name = "lstDepartedCars";
+            this.lstDepartedCars.Size = new System.Drawing.Size(574, 184);
+            this.lstDepartedCars.TabIndex = 9;
+            // 
+            // lblDepartedCars
+            // 
+            this.lblDepartedCars = new System.Windows.Forms.Label();
+            this.lblDepartedCars.AutoSize = true;
+            this.lblDepartedCars.Location = new System.Drawing.Point(214, 212);
+            this.lblDepartedCars.Name = "lblDepartedCars";
+            this.lblDepartedCars.Size = new System.Drawing.Size(123, 15);
+            this.lblDepartedCars.TabIndex = 10;
+            this.lblDepartedCars.Text = "Vehículos que Salieron:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 211);
+            this.ClientSize = new System.Drawing.Size(800, 426);
+            this.Controls.Add(this.lblDepartedCars);
+            this.Controls.Add(this.lstDepartedCars);
             this.Controls.Add(this.lblCost);
-            this.Controls.Add(this.lblCarInfo);
             this.Controls.Add(this.lstCars);
             this.Controls.Add(this.btnRegisterExit);
             this.Controls.Add(this.btnRegisterEntry);
@@ -147,6 +158,7 @@ partial class Form1
     private System.Windows.Forms.Button btnRegisterEntry;
     private System.Windows.Forms.Button btnRegisterExit;
     private System.Windows.Forms.ListBox lstCars;
-    private System.Windows.Forms.Label lblCarInfo;
     private System.Windows.Forms.Label lblCost;
+    private System.Windows.Forms.ListBox lstDepartedCars;
+    private System.Windows.Forms.Label lblDepartedCars;
 }

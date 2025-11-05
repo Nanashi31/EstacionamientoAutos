@@ -5,11 +5,13 @@ namespace EstacionamientoAutos;
 public partial class Form1 : Form
 {
     private CircularDoublyLinkedList parkingLot;
+    private List<Car> departedCars;
 
     public Form1()
     {
         InitializeComponent();
         parkingLot = new CircularDoublyLinkedList();
+        departedCars = new List<Car>();
     }
 
     private void btnRegisterEntry_Click(object sender, EventArgs e)
@@ -65,10 +67,11 @@ public partial class Form1 : Form
             TimeSpan timeSpent = exitTime - exitingCar.EntryTime;
             double cost = timeSpent.TotalSeconds * 2.0;
 
-            lblCarInfo.Text = $"Vehículo que sale: {exitingCar.Plate}, Propietario: {exitingCar.Owner}, Hora de Entrada: {exitingCar.EntryTime}, Hora de Salida: {exitTime}";
             lblCost.Text = $"Costo: ${cost:F2}";
 
+            departedCars.Add(exitingCar);
             UpdateCarList();
+            UpdateDepartedCarList();
 
             MessageBox.Show("Vehículo ha salido del estacionamiento.");
         }
@@ -80,6 +83,15 @@ public partial class Form1 : Form
         foreach (Car car in parkingLot.ToArray())
         {
             lstCars.Items.Add(car.ToString());
+        }
+    }
+
+    private void UpdateDepartedCarList()
+    {
+        lstDepartedCars.Items.Clear();
+        foreach (Car car in departedCars)
+        {
+            lstDepartedCars.Items.Add(car.ToString());
         }
     }
 }
